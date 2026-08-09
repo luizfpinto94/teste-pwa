@@ -82,8 +82,10 @@ function showLogin() {
 
 
 // =========================
-// NAVEGAÇÃO
+// NAVEGAÇÃO COM ANIMAÇÃO
 // =========================
+
+let currentPage = "dashboard";
 
 document
     .querySelectorAll(".nav-item")
@@ -100,30 +102,105 @@ document
                     this.dataset.title;
 
 
-                // Esconder todas
-                Object
-                    .values(pages)
-                    .forEach(page => {
-
-                        page.classList.add(
-                            "hidden"
-                        );
-
-                    });
+                // Não faz nada se já estiver na página
+                if (pageName === currentPage) {
+                    return;
+                }
 
 
-                // Mostrar página
-                pages[pageName]
-                    .classList
-                    .remove("hidden");
+                const oldPage =
+                    pages[currentPage];
+
+                const newPage =
+                    pages[pageName];
+
+
+                // Descobrir direção
+                const buttons = [
+                    ...document.querySelectorAll(
+                        ".nav-item"
+                    )
+                ];
+
+                const oldIndex =
+                    buttons.findIndex(
+                        button =>
+                            button.dataset.page ===
+                            currentPage
+                    );
+
+                const newIndex =
+                    buttons.findIndex(
+                        button =>
+                            button.dataset.page ===
+                            pageName
+                    );
+
+
+                const direction =
+                    newIndex > oldIndex
+                        ? "right"
+                        : "left";
+
+
+                // Preparar nova página
+
+                newPage.classList.remove(
+                    "hidden"
+                );
+
+                newPage.classList.remove(
+                    "slide-in",
+                    "slide-left"
+                );
+
+
+                // Forçar o navegador a reconhecer
+                // uma nova animação
+
+                void newPage.offsetWidth;
+
+
+                if (direction === "right") {
+
+                    newPage.classList.add(
+                        "slide-in"
+                    );
+
+                } else {
+
+                    newPage.classList.add(
+                        "slide-left"
+                    );
+
+                }
+
+
+                // Esconder página anterior
+
+                setTimeout(() => {
+
+                    oldPage.classList.add(
+                        "hidden"
+                    );
+
+                }, 280);
+
+
+                // Atualizar página atual
+
+                currentPage =
+                    pageName;
 
 
                 // Atualizar título
+
                 headerTitle.textContent =
                     pageTitle;
 
 
-                // Atualizar botão ativo
+                // Atualizar menu
+
                 document
                     .querySelectorAll(".nav-item")
                     .forEach(item => {
@@ -141,6 +218,7 @@ document
 
 
                 // Voltar para o topo
+
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
@@ -151,7 +229,6 @@ document
         );
 
     });
-
 
 // =========================
 // LOGOUT
