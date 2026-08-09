@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#111827">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Meu App</title>
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+    <section id="login-screen" class="screen">
+
+        <div class="login-card">
+
+            <div class="logo">
+                🚀
+            </div>
+
+            <h1>Meu App</h1>
+            <p class="subtitle">Entre para continuar</p>
+
+            <form id="login-form">
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="seu@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Senha</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="••••••••"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Entrar
+                </button>
+
+            </form>
+
+            <p class="demo-text">
+                Teste: qualquer email e senha
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- APP -->
+    <section id="app-screen" class="app hidden">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div>
+                <span class="welcome">Olá 👋</span>
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="avatar">
+                U
+            </div>
+
+        </header>
+
+
+        <!-- CONTEÚDO -->
+        <main class="content">
+
+            <!-- DASHBOARD -->
+            <div id="dashboard-page" class="page">
+
+                <div class="balance-card">
+
+                    <span>Saldo disponível</span>
+
+                    <h1>R$ 8.450,00</h1>
+
+                    <small>+12,5% este mês</small>
+
+                </div>
+
+
+                <h3>Visão geral</h3>
+
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <span>Vendas</span>
+                        <strong>248</strong>
+                        <small>+8,2%</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Clientes</span>
+                        <strong>1.284</strong>
+                        <small>+5,4%</small>
+                    </div>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="section-title">
+                        <h3>Atividade recente</h3>
+                        <span>Ver tudo</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon green">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Pagamento recebido</strong>
+                            <small>Hoje, 14:32</small>
+                        </div>
+
+                        <strong class="money">+ R$ 350</strong>
+                    </div>
+
+
+                    <div class="activity-item">
+                        <div class="activity-icon blue">
+                            👤
+                        </div>
+
+                        <div>
+                            <strong>Novo cliente</strong>
+                            <small>Hoje, 11:20</small>
+                        </div>
+
+                        <strong class="money">+1</strong>
+                    </div>
+
+
+                    <div class="activity-item">
+                        <div class="activity-icon orange">
+                            🛒
+                        </div>
+
+                        <div>
+                            <strong>Nova venda</strong>
+                            <small>Ontem, 18:45</small>
+                        </div>
+
+                        <strong class="money">+ R$ 890</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PERFIL -->
+            <div id="profile-page" class="page hidden">
+
+                <div class="page-title">
+                    <h2>Meu perfil</h2>
+                    <p>Informações da sua conta</p>
+                </div>
+
+                <div class="profile-card">
+
+                    <div class="big-avatar">
+                        U
+                    </div>
+
+                    <h2>Usuário Teste</h2>
+                    <p>usuario@email.com</p>
+
+                </div>
+
+                <button class="secondary-button">
+                    Editar perfil
+                </button>
+
+            </div>
+
+
+            <!-- CONFIGURAÇÕES -->
+            <div id="settings-page" class="page hidden">
+
+                <div class="page-title">
+                    <h2>Configurações</h2>
+                    <p>Personalize seu aplicativo</p>
+                </div>
+
+                <div class="settings-list">
+
+                    <div class="setting">
+                        <div>
+                            <strong>Notificações</strong>
+                            <small>Receber notificações</small>
+                        </div>
+
+                        <input type="checkbox" checked>
+                    </div>
+
+                    <div class="setting">
+                        <div>
+                            <strong>Modo escuro</strong>
+                            <small>Aparência do aplicativo</small>
+                        </div>
+
+                        <input type="checkbox">
+                    </div>
+
+                </div>
+
+                <button id="logout-button" class="logout-button">
+                    Sair da conta
+                </button>
+
+            </div>
+
+        </main>
+
+
+        <!-- MENU -->
+        <nav class="bottom-nav">
+
+            <button class="nav-item active" data-page="dashboard">
+                <span>⌂</span>
+                <small>Início</small>
+            </button>
+
+            <button class="nav-item" data-page="profile">
+                <span>♙</span>
+                <small>Perfil</small>
+            </button>
+
+            <button class="nav-item" data-page="settings">
+                <span>⚙</span>
+                <small>Config.</small>
+            </button>
+
+        </nav>
+
+    </section>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
