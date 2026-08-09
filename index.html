@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
 
     <meta name="theme-color" content="#111827">
 
@@ -14,7 +19,10 @@
 
 <body>
 
-    <!-- LOGIN -->
+    <!-- =========================
+         LOGIN
+    ========================== -->
+
     <section id="login-screen" class="screen">
 
         <div class="login-card">
@@ -24,31 +32,43 @@
             </div>
 
             <h1>Meu App</h1>
-            <p class="subtitle">Entre para continuar</p>
+
+            <p class="subtitle">
+                Entre para continuar
+            </p>
 
             <form id="login-form">
 
                 <div class="input-group">
+
                     <label>Email</label>
+
                     <input
                         type="email"
                         id="email"
                         placeholder="seu@email.com"
                         required
                     >
+
                 </div>
 
                 <div class="input-group">
+
                     <label>Senha</label>
+
                     <input
                         type="password"
                         id="password"
                         placeholder="••••••••"
                         required
                     >
+
                 </div>
 
-                <button type="submit" class="primary-button">
+                <button
+                    type="submit"
+                    class="primary-button"
+                >
                     Entrar
                 </button>
 
@@ -63,106 +83,235 @@
     </section>
 
 
-    <!-- APP -->
+    <!-- =========================
+         APP
+    ========================== -->
+
     <section id="app-screen" class="app hidden">
 
         <!-- HEADER -->
+
         <header class="header">
 
             <div>
-                <span class="welcome">Olá 👋</span>
-                <h2>Dashboard</h2>
+
+                <span class="welcome">
+                    Olá 👋
+                </span>
+
+                <h2 id="page-header-title">
+                    Dashboard
+                </h2>
+
             </div>
 
-            <div class="avatar">
+            <button
+                class="avatar"
+                id="header-avatar"
+            >
                 U
-            </div>
+            </button>
 
         </header>
 
 
         <!-- CONTEÚDO -->
+
         <main class="content">
 
-            <!-- DASHBOARD -->
-            <div id="dashboard-page" class="page">
+
+            <!-- =========================
+                 DASHBOARD
+            ========================== -->
+
+            <div
+                id="dashboard-page"
+                class="page"
+            >
 
                 <div class="balance-card">
 
-                    <span>Saldo disponível</span>
+                    <span>
+                        Saldo disponível
+                    </span>
 
-                    <h1>R$ 8.450,00</h1>
+                    <h1>
+                        R$ 8.450,00
+                    </h1>
 
-                    <small>+12,5% este mês</small>
+                    <small>
+                        ↑ 12,5% este mês
+                    </small>
 
                 </div>
 
 
-                <h3>Visão geral</h3>
+                <h3>
+                    Visão geral
+                </h3>
+
 
                 <div class="stats">
 
                     <div class="stat-card">
-                        <span>Vendas</span>
-                        <strong>248</strong>
-                        <small>+8,2%</small>
+
+                        <span>
+                            Vendas
+                        </span>
+
+                        <strong>
+                            248
+                        </strong>
+
+                        <small>
+                            +8,2%
+                        </small>
+
                     </div>
 
+
                     <div class="stat-card">
-                        <span>Clientes</span>
-                        <strong>1.284</strong>
-                        <small>+5,4%</small>
+
+                        <span>
+                            Clientes
+                        </span>
+
+                        <strong>
+                            1.284
+                        </strong>
+
+                        <small>
+                            +5,4%
+                        </small>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>
+                            Pedidos
+                        </span>
+
+                        <strong>
+                            86
+                        </strong>
+
+                        <small>
+                            +12,8%
+                        </small>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>
+                            Produtos
+                        </span>
+
+                        <strong>
+                            432
+                        </strong>
+
+                        <small>
+                            +3,1%
+                        </small>
+
                     </div>
 
                 </div>
 
 
+                <!-- ATIVIDADE -->
+
                 <div class="activity">
 
                     <div class="section-title">
-                        <h3>Atividade recente</h3>
-                        <span>Ver tudo</span>
+
+                        <h3>
+                            Atividade recente
+                        </h3>
+
+                        <span>
+                            Ver tudo
+                        </span>
+
                     </div>
 
+
                     <div class="activity-item">
+
                         <div class="activity-icon green">
                             ✓
                         </div>
 
                         <div>
-                            <strong>Pagamento recebido</strong>
-                            <small>Hoje, 14:32</small>
+
+                            <strong>
+                                Pagamento recebido
+                            </strong>
+
+                            <small>
+                                Hoje, 14:32
+                            </small>
+
                         </div>
 
-                        <strong class="money">+ R$ 350</strong>
+                        <strong class="money">
+                            + R$ 350
+                        </strong>
+
                     </div>
 
 
                     <div class="activity-item">
+
                         <div class="activity-icon blue">
                             👤
                         </div>
 
                         <div>
-                            <strong>Novo cliente</strong>
-                            <small>Hoje, 11:20</small>
+
+                            <strong>
+                                Novo cliente
+                            </strong>
+
+                            <small>
+                                Hoje, 11:20
+                            </small>
+
                         </div>
 
-                        <strong class="money">+1</strong>
+                        <strong class="money">
+                            +1
+                        </strong>
+
                     </div>
 
 
                     <div class="activity-item">
+
                         <div class="activity-icon orange">
                             🛒
                         </div>
 
                         <div>
-                            <strong>Nova venda</strong>
-                            <small>Ontem, 18:45</small>
+
+                            <strong>
+                                Nova venda
+                            </strong>
+
+                            <small>
+                                Ontem, 18:45
+                            </small>
+
                         </div>
 
-                        <strong class="money">+ R$ 890</strong>
+                        <strong class="money">
+                            + R$ 890
+                        </strong>
+
                     </div>
 
                 </div>
@@ -170,13 +319,508 @@
             </div>
 
 
-            <!-- PERFIL -->
-            <div id="profile-page" class="page hidden">
+            <!-- =========================
+                 PEDIDOS
+            ========================== -->
+
+            <div
+                id="orders-page"
+                class="page hidden"
+            >
 
                 <div class="page-title">
-                    <h2>Meu perfil</h2>
-                    <p>Informações da sua conta</p>
+
+                    <h2>
+                        Pedidos
+                    </h2>
+
+                    <p>
+                        Acompanhe seus pedidos
+                    </p>
+
                 </div>
+
+
+                <div class="search-box">
+
+                    🔍
+
+                    <input
+                        type="text"
+                        placeholder="Buscar pedido..."
+                        id="order-search"
+                    >
+
+                </div>
+
+
+                <div class="orders-list">
+
+
+                    <div class="order-card">
+
+                        <div class="order-top">
+
+                            <strong>
+                                #PED-1048
+                            </strong>
+
+                            <span class="status delivered">
+                                Entregue
+                            </span>
+
+                        </div>
+
+                        <p>
+                            João da Silva
+                        </p>
+
+                        <small>
+                            08/08/2026 • 3 produtos
+                        </small>
+
+                        <div class="order-bottom">
+
+                            <strong>
+                                R$ 459,90
+                            </strong>
+
+                            <span>
+                                Ver detalhes →
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="order-card">
+
+                        <div class="order-top">
+
+                            <strong>
+                                #PED-1047
+                            </strong>
+
+                            <span class="status pending">
+                                Pendente
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Maria Oliveira
+                        </p>
+
+                        <small>
+                            08/08/2026 • 5 produtos
+                        </small>
+
+                        <div class="order-bottom">
+
+                            <strong>
+                                R$ 829,00
+                            </strong>
+
+                            <span>
+                                Ver detalhes →
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="order-card">
+
+                        <div class="order-top">
+
+                            <strong>
+                                #PED-1046
+                            </strong>
+
+                            <span class="status processing">
+                                Processando
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Carlos Santos
+                        </p>
+
+                        <small>
+                            07/08/2026 • 2 produtos
+                        </small>
+
+                        <div class="order-bottom">
+
+                            <strong>
+                                R$ 199,90
+                            </strong>
+
+                            <span>
+                                Ver detalhes →
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="order-card">
+
+                        <div class="order-top">
+
+                            <strong>
+                                #PED-1045
+                            </strong>
+
+                            <span class="status cancelled">
+                                Cancelado
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Ana Souza
+                        </p>
+
+                        <small>
+                            07/08/2026 • 1 produto
+                        </small>
+
+                        <div class="order-bottom">
+
+                            <strong>
+                                R$ 79,90
+                            </strong>
+
+                            <span>
+                                Ver detalhes →
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 RELATÓRIOS
+            ========================== -->
+
+            <div
+                id="reports-page"
+                class="page hidden"
+            >
+
+                <div class="page-title">
+
+                    <h2>
+                        Relatórios
+                    </h2>
+
+                    <p>
+                        Desempenho dos últimos meses
+                    </p>
+
+                </div>
+
+
+                <div class="report-highlight">
+
+                    <div>
+
+                        <span>
+                            Faturamento
+                        </span>
+
+                        <h1>
+                            R$ 42.850
+                        </h1>
+
+                        <small>
+                            ↑ 18,4% comparado ao período anterior
+                        </small>
+
+                    </div>
+
+                    <div class="report-icon">
+                        📈
+                    </div>
+
+                </div>
+
+
+                <div class="chart-card">
+
+                    <div class="section-title">
+
+                        <h3>
+                            Vendas
+                        </h3>
+
+                        <span>
+                            2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="fake-chart">
+
+                        <div class="chart-bars">
+
+                            <div
+                                class="bar"
+                                style="height: 35%"
+                            >
+                                <span>Jan</span>
+                            </div>
+
+                            <div
+                                class="bar"
+                                style="height: 52%"
+                            >
+                                <span>Fev</span>
+                            </div>
+
+                            <div
+                                class="bar"
+                                style="height: 45%"
+                            >
+                                <span>Mar</span>
+                            </div>
+
+                            <div
+                                class="bar"
+                                style="height: 68%"
+                            >
+                                <span>Abr</span>
+                            </div>
+
+                            <div
+                                class="bar"
+                                style="height: 58%"
+                            >
+                                <span>Mai</span>
+                            </div>
+
+                            <div
+                                class="bar"
+                                style="height: 82%"
+                            >
+                                <span>Jun</span>
+                            </div>
+
+                            <div
+                                class="bar active"
+                                style="height: 95%"
+                            >
+                                <span>Jul</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stats">
+
+                    <div class="stat-card">
+
+                        <span>
+                            Ticket médio
+                        </span>
+
+                        <strong>
+                            R$ 172
+                        </strong>
+
+                        <small>
+                            +6,8%
+                        </small>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>
+                            Conversão
+                        </span>
+
+                        <strong>
+                            8,4%
+                        </strong>
+
+                        <small>
+                            +2,1%
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 NOTIFICAÇÕES
+            ========================== -->
+
+            <div
+                id="notifications-page"
+                class="page hidden"
+            >
+
+                <div class="page-title">
+
+                    <h2>
+                        Notificações
+                    </h2>
+
+                    <p>
+                        Fique por dentro das novidades
+                    </p>
+
+                </div>
+
+
+                <div class="notifications">
+
+
+                    <div class="notification unread">
+
+                        <div class="notification-icon blue">
+                            🛒
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Novo pedido recebido
+                            </strong>
+
+                            <p>
+                                O pedido #PED-1048 acabou de chegar.
+                            </p>
+
+                            <small>
+                                Há 10 minutos
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="notification unread">
+
+                        <div class="notification-icon green">
+                            💰
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Pagamento confirmado
+                            </strong>
+
+                            <p>
+                                Você recebeu R$ 350,00.
+                            </p>
+
+                            <small>
+                                Há 1 hora
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="notification">
+
+                        <div class="notification-icon orange">
+                            ⚠️
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Estoque baixo
+                            </strong>
+
+                            <p>
+                                3 produtos estão com estoque baixo.
+                            </p>
+
+                            <small>
+                                Ontem
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="notification">
+
+                        <div class="notification-icon purple">
+                            🎉
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Parabéns!
+                            </strong>
+
+                            <p>
+                                Você bateu sua meta mensal.
+                            </p>
+
+                            <small>
+                                Ontem
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 PERFIL
+            ========================== -->
+
+            <div
+                id="profile-page"
+                class="page hidden"
+            >
+
+                <div class="page-title">
+
+                    <h2>
+                        Meu perfil
+                    </h2>
+
+                    <p>
+                        Informações da sua conta
+                    </p>
+
+                </div>
+
 
                 <div class="profile-card">
 
@@ -184,10 +828,16 @@
                         U
                     </div>
 
-                    <h2>Usuário Teste</h2>
-                    <p>usuario@email.com</p>
+                    <h2>
+                        Usuário Teste
+                    </h2>
+
+                    <p>
+                        usuario@email.com
+                    </p>
 
                 </div>
+
 
                 <button class="secondary-button">
                     Editar perfil
@@ -196,37 +846,80 @@
             </div>
 
 
-            <!-- CONFIGURAÇÕES -->
-            <div id="settings-page" class="page hidden">
+            <!-- =========================
+                 CONFIGURAÇÕES
+            ========================== -->
+
+            <div
+                id="settings-page"
+                class="page hidden"
+            >
 
                 <div class="page-title">
-                    <h2>Configurações</h2>
-                    <p>Personalize seu aplicativo</p>
+
+                    <h2>
+                        Configurações
+                    </h2>
+
+                    <p>
+                        Personalize seu aplicativo
+                    </p>
+
                 </div>
+
 
                 <div class="settings-list">
 
                     <div class="setting">
+
                         <div>
-                            <strong>Notificações</strong>
-                            <small>Receber notificações</small>
+
+                            <strong>
+                                Notificações
+                            </strong>
+
+                            <small>
+                                Receber notificações
+                            </small>
+
                         </div>
 
-                        <input type="checkbox" checked>
+                        <input
+                            type="checkbox"
+                            checked
+                        >
+
                     </div>
 
+
                     <div class="setting">
+
                         <div>
-                            <strong>Modo escuro</strong>
-                            <small>Aparência do aplicativo</small>
+
+                            <strong>
+                                Modo escuro
+                            </strong>
+
+                            <small>
+                                Aparência do aplicativo
+                            </small>
+
                         </div>
 
-                        <input type="checkbox">
+                        <input
+                            type="checkbox"
+                            id="dark-mode"
+                        >
+
                     </div>
 
                 </div>
 
-                <button id="logout-button" class="logout-button">
+
+                <button
+                    id="logout-button"
+                    class="logout-button"
+                >
                     Sair da conta
                 </button>
 
@@ -235,23 +928,87 @@
         </main>
 
 
-        <!-- MENU -->
+        <!-- =========================
+             NAVEGAÇÃO
+        ========================== -->
+
         <nav class="bottom-nav">
 
-            <button class="nav-item active" data-page="dashboard">
+
+            <button
+                class="nav-item active"
+                data-page="dashboard"
+                data-title="Dashboard"
+            >
+
                 <span>⌂</span>
-                <small>Início</small>
+
+                <small>
+                    Início
+                </small>
+
             </button>
 
-            <button class="nav-item" data-page="profile">
+
+            <button
+                class="nav-item"
+                data-page="orders"
+                data-title="Pedidos"
+            >
+
+                <span>▣</span>
+
+                <small>
+                    Pedidos
+                </small>
+
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-page="reports"
+                data-title="Relatórios"
+            >
+
+                <span>▥</span>
+
+                <small>
+                    Relatórios
+                </small>
+
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-page="notifications"
+                data-title="Notificações"
+            >
+
+                <span>♢</span>
+
+                <small>
+                    Avisos
+                </small>
+
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-page="profile"
+                data-title="Perfil"
+            >
+
                 <span>♙</span>
-                <small>Perfil</small>
+
+                <small>
+                    Perfil
+                </small>
+
             </button>
 
-            <button class="nav-item" data-page="settings">
-                <span>⚙</span>
-                <small>Config.</small>
-            </button>
 
         </nav>
 
@@ -261,4 +1018,5 @@
     <script src="app.js"></script>
 
 </body>
+
 </html>
