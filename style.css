@@ -367,3 +367,96 @@
     }
 
 }
+
+
+
+
+/* =========================
+   TRANSIÇÕES DE PÁGINA
+========================= */
+
+.page {
+    animation-duration: 0.28s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.page.slide-in {
+    animation-name: slideIn;
+}
+
+.page.slide-left {
+    animation-name: slideLeft;
+}
+
+@keyframes slideIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes slideLeft {
+
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* Botão pressionado */
+
+.nav-item {
+    transition:
+        transform 0.15s ease,
+        color 0.2s ease;
+}
+
+.nav-item:active {
+    transform: scale(0.88);
+}
+
+
+/* Cards */
+
+.stat-card,
+.order-card,
+.activity,
+.chart-card,
+.notifications {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.stat-card:active,
+.order-card:active {
+    transform: scale(0.98);
+}
+
+
+/* Botão principal */
+
+.primary-button {
+    transition:
+        transform 0.15s ease,
+        background 0.2s ease;
+}
+
+.primary-button:active {
+    transform: scale(0.97);
+}
